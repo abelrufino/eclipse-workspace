@@ -1,0 +1,39 @@
+package application;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.product;
+import services.CalculationService;
+
+public class Program {
+
+	private static Object object;
+	private static Object object2;
+	private static Object object3;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<product> list = new ArrayList<>();
+		
+		String path = "/home/abelrufino/Linux/in.txt";
+		try (BufferedReader br = new BufferedReader(new FileReader(path))){
+			String line = br.readLine();
+			while(line != null) {
+				String[] fields = line.split(",");
+				list.add(new product(fields[0], Double.parseDouble(fields[1])));
+				line = br.readLine();
+			}
+			
+			Integer x = CalculationService.max(list);
+			System.out.println("Max:");
+			System.out.println(x);
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Erro: " + e.getMessage());
+		}
+	}
+
+}
