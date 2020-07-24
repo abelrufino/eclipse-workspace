@@ -2,6 +2,7 @@ package application;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
@@ -13,6 +14,8 @@ public class Program {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		Scanner sc = new Scanner(System.in);
+		
 		// Department obj = new Department(1, "Books");
 		// Seller seller = new Seller(1, "Abel", "anetosib@gmail.com", new Date(),
 		// 1700.0, obj);
@@ -38,10 +41,10 @@ public class Program {
 			System.out.println(obj);
 		}
 		
-	//	System.out.println("\n====== TEST 4: seller insert ======");
-	//	Seller newSeller = new Seller(null, "Esther Machado", "ester@hotmail.com", new Date(), 1500.0, department);
-	//	sellerDao.insert(newSeller);
-	//	System.out.printf("Inserted! New id", + newSeller.getId());
+		System.out.println("\n====== TEST 4: seller insert ======");
+		Seller newSeller = new Seller(null, "Esther Machado", "ester@hotmail.com", new Date(), 1500.0, department);
+		sellerDao.insert(newSeller);
+		System.out.printf("Inserted! New id", + newSeller.getId());
 		
 		
 		System.out.println("\n====== TEST 5: seller update ======");
@@ -52,5 +55,11 @@ public class Program {
 		sellerDao.update(seller);
 		System.out.println("Update completed");
 		
+		System.out.println("\n====== TEST 6: seller delete ======");
+		System.out.print("Enter id for delete test: ");
+		int id = sc.nextInt();
+		sellerDao.deleteById(id);
+		System.out.println("Delete completed");
+		sc.close();
 	}
 }
