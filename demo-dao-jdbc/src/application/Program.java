@@ -38,10 +38,19 @@ public class Program {
 			System.out.println(obj);
 		}
 		
-		System.out.println("\n====== TEST 4: seller insert ======");
-		Seller newSeller = new Seller(null, "Esther Machado", "ester@hotmail.com", new Date(), 1500.0, department);
-		sellerDao.insert(newSeller);
-		System.out.printf("Inserted! New id", + newSeller.getId());
+	//	System.out.println("\n====== TEST 4: seller insert ======");
+	//	Seller newSeller = new Seller(null, "Esther Machado", "ester@hotmail.com", new Date(), 1500.0, department);
+	//	sellerDao.insert(newSeller);
+	//	System.out.printf("Inserted! New id", + newSeller.getId());
+		
+		
+		System.out.println("\n====== TEST 5: seller update ======");
+		seller = sellerDao.findById(9);
+		seller.setName("Lúcia F C Rufino");
+		seller.setEmail("luciafcrufino@gmail.com");
+		seller.setBaseSalary(3000.0);
+		sellerDao.update(seller);
+		System.out.println("Update completed");
 		
 	}
 }
