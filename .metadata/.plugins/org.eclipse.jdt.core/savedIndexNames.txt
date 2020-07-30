@@ -6,7 +6,6 @@ INDEX VERSION 1.131+/home/abelrufino/eclipse-workspace/.metadata/.plugins/org.ec
 1453521600.index
 1942944497.index
 4039518604.index
-1188585573.index
 3577928986.index
 1035801623.index
 1956855528.index
@@ -16,7 +15,6 @@ INDEX VERSION 1.131+/home/abelrufino/eclipse-workspace/.metadata/.plugins/org.ec
 908453080.index
 3891011810.index
 298023553.index
-646308851.index
 1318068187.index
 174213070.index
 3252215993.index
@@ -36,7 +34,6 @@ INDEX VERSION 1.131+/home/abelrufino/eclipse-workspace/.metadata/.plugins/org.ec
 80333415.index
 3987369810.index
 1557918784.index
-68728344.index
 1720761170.index
 1075203402.index
 3793652866.index
@@ -48,11 +45,8 @@ INDEX VERSION 1.131+/home/abelrufino/eclipse-workspace/.metadata/.plugins/org.ec
 1519564472.index
 1811960657.index
 3938954059.index
-3586045142.index
 137611929.index
 920318878.index
-84061425.index
-294601091.index
 449134142.index
 4252429600.index
 957796680.index
@@ -61,14 +55,12 @@ INDEX VERSION 1.131+/home/abelrufino/eclipse-workspace/.metadata/.plugins/org.ec
 2501863906.index
 2595053508.index
 2732363424.index
-2091958203.index
 1927897609.index
 3712224633.index
-2960965327.index
 2566967872.index
-3404833729.index
 3965181640.index
 3503344939.index
+568994411.index
 3007587136.index
 3766810208.index
 3862407264.index
