@@ -12,7 +12,7 @@ public class ViewController {
 
 	@FXML
 	public void onBtTestAction() {
-		Alerts.showAlert("Alert Title", null, "Hello", AlertType.ERROR);
+		Alerts.showAlert("Alert Title", null, "Hello", AlertType.CONFIRMATION);
 	}
 
 }
