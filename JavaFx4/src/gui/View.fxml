@@ -7,13 +7,12 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="gui.ViewController">
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
    <children>
       <Pane prefHeight="300.0" prefWidth="400.0">
          <children>
-            <TextField fx:id="txtNumber1" layoutX="15.0" layoutY="79.0" />
-            <TextField fx:id="txtNumber2" layoutX="15.0" layoutY="116.0" />
+            <TextField fx:id="txtNumber1" layoutX="15.0" layoutY="79.0" promptText="First number" />
+            <TextField fx:id="txtNumber2" layoutX="15.0" layoutY="116.0" promptText="Second number" />
             <Label layoutX="51.0" layoutY="36.0" text="Calcute Sum">
                <font>
                   <Font name="System Bold" size="14.0" />
